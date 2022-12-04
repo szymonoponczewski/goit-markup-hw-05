@@ -123,6 +123,13 @@ body {
   transition-duration: 200ms;
 }
 
+.nav-list-pedestal {
+  background-color: rgb(33, 150, 243);
+  width: 58px;
+  height: 4px;
+  border-radius: 2px;
+}
+
 .nav-link:link {
   color: rgba(33, 33, 33, 1);
 }
