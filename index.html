@@ -48,7 +48,7 @@
       <section class="header-slogan">
         <div class="container section header-background">
           <h1 class="header-slogan-text">efektywne rozwiązania dla waszego biznesu</h1>
-          <button class="order-button" type="button">Zamów usługę</button>
+          <button class="order-button" type="button" data-modal-open>Zamów usługę</button>
         </div>
       </section>
 
@@ -122,30 +122,39 @@
       <section class="hero">
         <div class="container section">
           <h2 class="hero-header">Czym się zajmujemy</h2>
-          <ul class="work-specification-list list-display">
-            <li>
+          <ul class="list-display">
+            <li class="hero-list-item">
               <img
                 src="images/section/programming.jpg"
                 alt="ręce na klawiaturze piszące kod"
                 width="370"
                 height="294"
               />
+              <div class="label">
+                <p class="label-slogan">aplikacje komputerowe</p>
+               </div>
             </li>
-            <li>
+            <li class="hero-list-item">
               <img
                 src="images/section/ui_check.jpg"
                 alt="ekran laptopa wyświetlający grafikę"
                 width="370"
                 height="294"
               />
+               <div class="label">
+                <p class="label-slogan">aplikacje mobilne</p>
+               </div>
             </li>
-            <li>
+            <li class="hero-list-item">
               <img
                 src="images/section/designing_color_picker.jpg"
                 alt="człowiek trzymający tablet z paletą kolorów"
                 width="370"
                 height="294"
               />
+               <div class="label">
+                <p class="label-slogan">rozwiązania graficzne</p>
+               </div>
             </li>
           </ul>
         </div>
@@ -397,5 +406,11 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="close-button" type="button" data-modal-close>&#10005</button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
