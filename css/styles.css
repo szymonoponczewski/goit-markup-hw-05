@@ -123,13 +123,13 @@ body {
   transition-duration: 200ms;
 }
 
-.nav-list-pedestal {
+/* .nav-list-pedestal {
   background-color: rgb(33, 150, 243);
   width: 58px;
   height: 4px;
   border-radius: 2px;
   margin-top: 20px;
-}
+} */
 
 .nav-link:link {
   color: rgba(33, 33, 33, 1);
@@ -490,9 +490,8 @@ body {
 
 .modal {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  /* top: 50%; */
+  /* left: 50%; */
   width: 33rem;
   height: 36.31rem;
   background-color: white;
