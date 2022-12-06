@@ -389,8 +389,8 @@ body {
 }
 
 .icon-wrapper {
-  width: 44px;
-  height: 44px;
+  width: 2.75rem;
+  height: 2.75rem;
   border-radius: 50%;
   transition-duration: 200ms;
   cursor: pointer;
@@ -572,8 +572,6 @@ body {
 }
 
 .product-list-item {
-  position: relative;
-  overflow: hidden;
   flex-basis: calc((100% - 4rem) / 3);
   transition-duration: 500ms;
 }
@@ -582,14 +580,28 @@ body {
   display: block;
 }
 
+.image-overlay {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 18.38rem;
+}
+
 .overlay {
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 370px;
+  width: 23.13rem;
   background-color: rgba(33, 150, 243, 0.9);
   transform: translateY(100%);
   transition: transform 250ms ease;
+}
+
+.overlay-text {
+  font-size: 1.13rem;
+  line-height: 1.56;
+  color: rgba(255, 255, 255, 1);
+  margin: 3.06rem 2.81rem 3.06rem 1.5rem;
 }
 
 .product-list-item:hover {
