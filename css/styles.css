@@ -508,25 +508,6 @@ body {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  transition-property: transform;
-  width: 33rem;
-  height: 36.31rem;
-  background-color: rgb(255, 255, 255);
-}
-
-.backdrop.is-hidden .modal {
-  transform: scale(1.5);
-  transition-duration: 3s;
-  transition-timing-function: linear;
-
-  /* tutaj triggeruja animacje do wylaczania bo pojawia sie klasa is-hidden */
-}
-
 .close-button {
   position: absolute;
   width: 1.88rem;
@@ -538,10 +519,30 @@ body {
   border-radius: 50%;
 }
 
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 33rem;
+  height: 36.31rem;
+  background-color: rgb(255, 255, 255);
+  transition-property: transform;
+  transform: translate(-50%, -50%);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .is-hidden {
   pointer-events: none;
   visibility: hidden;
   opacity: 0;
+  transform: scale(1.5);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0.5);
 }
 
 /* PORTFOLIO.HTML STYLING */
