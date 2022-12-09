@@ -61,6 +61,20 @@ body {
   color: rgba(33, 150, 243, 1);
 }
 
+.header-mail-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 0.63rem;
+}
+
+.header-tel-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 0.63rem;
+}
+
 .header-mail-link,
 .header-tel-link {
   color: rgba(117, 117, 117, 1);
@@ -80,7 +94,6 @@ body {
 .envelope-icon,
 .smartphone-icon {
   fill: rgba(117, 117, 117, 1);
-  margin-right: 0.63rem;
   cursor: pointer;
   transition-property: fill;
   transition-duration: 250ms;
@@ -226,9 +239,11 @@ body {
 }
 
 .footer-icon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 2.75rem;
   height: 2.75rem;
-  padding: 0.75rem;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   transition-property: background-color;
@@ -399,6 +414,9 @@ body {
 }
 
 .icon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 2.75rem;
   height: 2.75rem;
   border-radius: 50%;
@@ -432,8 +450,6 @@ body {
 .twitter-icon,
 .facebook-icon,
 .linkedin-icon {
-  margin-left: 0.75rem;
-  margin-top: 0.75rem;
   fill: var(--social-link-color);
 }
 
@@ -467,10 +483,11 @@ body {
 }
 
 .our-clients-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   flex-basis: calc((100% - 11.25rem) / 6);
   height: 5.75rem;
-  padding-left: 2rem;
-  padding-top: 1rem;
   border: 0.06rem solid rgba(175, 177, 184, 1);
   border-radius: 0.25rem;
   transition-property: border-color, fill;
@@ -484,6 +501,7 @@ body {
 }
 
 .our-clients-item:hover {
+  cursor: pointer;
   border: 0.06rem solid rgb(33, 150, 243);
   border-radius: 0.25rem;
 }
@@ -517,6 +535,14 @@ body {
   border: 0.06rem solid rgba(0, 0, 0, 0.1);
   background-color: rgb(255, 255, 255);
   border-radius: 50%;
+  transition-property: background-color, color;
+  transition-duration: 250ms;
+}
+
+.close-button:hover {
+  background-color: rgba(0, 0, 0);
+  color: rgb(255, 255, 255);
+  cursor: pointer;
 }
 
 .modal {
